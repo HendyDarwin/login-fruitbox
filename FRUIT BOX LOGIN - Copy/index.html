@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="blur">
+        <div class="content-container">
+          <div class="content-left-container">
+            <div class="content-left-wrapper">
+              <h3>Our Philosophy</h3>
+              <p>
+                Affordable fruits, amazing health. Transform your life with
+                Fruit Box's fresh, affordable options. Nourish your body and
+                delight your senses with every bite.
+              </p>
+              <div class="content-left-bottom-items">
+                <a href="#" class="learn-more-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="content-right-container">
+            <div class="content-right-wrapper">
+              <div class="form-wrapper" id="loginForm">
+                <h2 class="form-title">Login</h2>
+                <input
+                  type="text"
+                  class="username-input"
+                  placeholder="Username"
+                  id="username"
+                />
+                <input
+                  type="password"
+                  class="password-input"
+                  placeholder="Password"
+                  id="password"
+                />
+                <a href="#" onclick="login()" class="submit-btn">Sign In</a>
+                <p class="footer-description">
+                  Don't have an account?
+                  <a href="#" onclick="toggleForm()">Register</a>
+                </p>
+              </div>
+              <div class="form-wrapper" id="registerForm" style="display: none">
+                <h2 class="form-title">Register</h2>
+                <input
+                  type="text"
+                  class="username-input"
+                  placeholder="Username"
+                  id="regUsername"
+                />
+                <input
+                  type="text"
+                  class="email-input"
+                  placeholder="Email"
+                  id="regEmail"
+                />
+                <input
+                  type="password"
+                  class="password-input"
+                  placeholder="Password"
+                  id="regPassword"
+                />
+                <a href="#" onclick="register()" class="submit-btn">Register</a>
+                <p class="footer-description">
+                  Already have an account?
+                  <a href="#" onclick="toggleForm()">Login</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
